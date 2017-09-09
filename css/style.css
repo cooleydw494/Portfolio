@@ -1,0 +1,59 @@
+/*
+#054963
+#1A1A1A
+#FFFFFF
+#ECECEC
+#0CAFAC
+*/
+
+html {
+    background-image: url(../images/backgroundtexture.jpg);
+    background-color: rgba(5, 73, 99, 0.81);
+    font-family: Cuprum, sans-serif;
+    font-size: 20px;
+}
+.flexrow {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.flexcolumn {
+    display: flex;
+    align-items: center;
+    height: 95vh;
+}
+.aboutme .flexcolumn {
+    height: 60vh;
+    text-align: center;
+}
+.wrapper {
+    width: 92vw;
+    height: 100vh;
+    background-color: #28e0dd;
+}
+h1,
+.navlinks span {
+    width: 150px;
+    text-align: center;
+    color: #ECECEC;
+}
+a {
+    text-decoration: none;
+    color: #ECECEC;
+}
+p {
+    color: #054963;
+    font-family: Assistant, sans-serif;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 800px) {
+    .wrapper {
+        width: 75vw;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        width: 65vw;
+    }
+}
