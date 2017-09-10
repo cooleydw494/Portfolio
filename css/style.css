@@ -7,10 +7,11 @@
 */
 
 html {
-    background-image: url(../images/backgroundtexture.jpg);
-    background-color: rgba(5, 73, 99, 0.81);
+/*    background-image: url(../images/backgroundtexture.png);*/
+    background-color: #0CAFAC;
     font-family: Cuprum, sans-serif;
     font-size: 20px;
+    position: relative;
 }
 .flexrow {
     display: flex;
@@ -28,22 +29,49 @@ html {
 }
 .wrapper {
     width: 92vw;
-    height: 100vh;
-    background-color: #28e0dd;
+    height: 90vh;
+}
+.header h1 {
+    font-variant: small-caps;
+    padding-bottom: 1rem;
+    width: 300px;
+    font-size: 2rem;
 }
 h1,
 .navlinks span {
     width: 150px;
     text-align: center;
-    color: #ECECEC;
+    font-variant: small-caps;
+    color: #054963;
 }
 a {
     text-decoration: none;
+    color: #054963;
+    transition: all 150ms ease-in-out;
+    font-size: 1.1rem;
+}
+a:visited {
+    color: #054963;
+}
+a:hover {
     color: #ECECEC;
+    text-shadow: 1px 1px 2px white;
+}
+a:active {
 }
 p {
+    color: #1A1A1A;
+    font-family: 'Open Sans', sans-serif;
+}
+footer {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+}
+footer a {
+    font-size: 1.75rem;
     color: #054963;
-    font-family: Assistant, sans-serif;
 }
 
 /* MEDIA QUERIES */
@@ -51,9 +79,13 @@ p {
     .wrapper {
         width: 75vw;
     }
+    footer {
+        width: 40vw;
+        left: 30vw;
+    }
 }
 @media screen and (min-width: 1200px) {
     .wrapper {
-        width: 65vw;
+        width: 60vw;
     }
 }
