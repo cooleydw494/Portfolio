@@ -7,8 +7,8 @@
 */
 
 html {
-/*    background-image: url(../images/backgroundtexture.png);*/
-    background-color: #0CAFAC;
+    background-color: #054963;
+    background-image: url('../images/backgroundtexture.png');
     font-family: Cuprum, sans-serif;
     font-size: 20px;
     position: relative;
@@ -27,15 +27,32 @@ html {
     height: 60vh;
     text-align: center;
 }
+.aboutme {
+    padding: 0 1vw;
+}
 .wrapper {
-    width: 92vw;
-    height: 90vh;
+    width: 95vw;
+    height: 97vh;
+    background-color: #0CAFAC;
+}
+.leftpanel {
+    display: none;
+    background-color: #1A1A1A;
+    color: #ECECEC;
+}
+.iconflexrow {
+    display: flex;
+    justify-content: space-around;
+    width: 28vw;
+    font-size: 2.5rem;
 }
 .header h1 {
     font-variant: small-caps;
-    padding-bottom: 1rem;
+    margin: 7vh 0;
     width: 300px;
     font-size: 2rem;
+    color: #ECECEC;
+    text-shadow: 1px 1px 5px #1A1A1A;
 }
 h1,
 .navlinks span {
@@ -49,13 +66,14 @@ a {
     color: #054963;
     transition: all 150ms ease-in-out;
     font-size: 1.1rem;
+    text-shadow: 0px 0px 10px #ECECEC;
 }
 a:visited {
     color: #054963;
 }
 a:hover {
     color: #ECECEC;
-    text-shadow: 1px 1px 2px white;
+    text-shadow: 2px 2px 3px #1A1A1A;
 }
 a:active {
 }
@@ -65,27 +83,47 @@ p {
 }
 footer {
     position: absolute;
-    bottom: 25px;
+    bottom: 3vh;
     left: 0;
     width: 100%;
 }
 footer a {
     font-size: 1.75rem;
     color: #054963;
+    text-shadow: 0px 1px 2px #ECECEC;
+}
+footer p {
+    font-size: .75rem;
+    font-variant: small-caps;
+    margin: 0;
+    margin-top: 1vh;
 }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 800px) {
     .wrapper {
-        width: 75vw;
+        width: 70vw;
+    }
+    .leftpanel {
+        display: flex;
+        align-items: center;
+        width: 29vw;
+        height: 97vh;
     }
     footer {
-        width: 40vw;
-        left: 30vw;
+        width: 50vw;
+        left: 40vw;
     }
 }
 @media screen and (min-width: 1200px) {
     .wrapper {
         width: 60vw;
+    }
+    .leftpanel {
+        width: 39vw;
+    }
+    footer {
+        width: 40vw;
+        left: 50vw;
     }
 }
