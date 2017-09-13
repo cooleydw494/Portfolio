@@ -10,7 +10,7 @@ html {
     background-color: #054963;
     background-image: url('../images/backgroundtexture.png');
     font-family: Cuprum, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
 }
 .flexrow {
@@ -29,10 +29,10 @@ html {
 }
 .aboutme {
     padding: 0 1vw;
+    margin-bottom: 6rem;
 }
 .wrapper {
     width: 95vw;
-    height: 97vh;
     background-color: #0CAFAC;
 }
 .leftpanel {
@@ -44,7 +44,7 @@ html {
     display: flex;
     justify-content: space-around;
     width: 28vw;
-    font-size: 2.5rem;
+    font-size: 2.15rem;
 }
 .header h1 {
     font-variant: small-caps;
@@ -60,6 +60,9 @@ h1,
     text-align: center;
     font-variant: small-caps;
     color: #054963;
+}
+nav {
+    margin-bottom: 5vh;
 }
 a {
     text-decoration: none;
@@ -80,10 +83,11 @@ a:active {
 p {
     color: #1A1A1A;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 footer {
     position: absolute;
-    bottom: 3vh;
+    bottom: 4vh;
     left: 0;
     width: 100%;
 }
@@ -100,6 +104,11 @@ footer p {
 }
 
 /* MEDIA QUERIES */
+@media screen and (min-width: 760px) {
+    html {
+        font-size: 22px; /*so its good on ipad*/
+    }
+}
 @media screen and (min-width: 800px) {
     .wrapper {
         width: 70vw;
@@ -113,6 +122,11 @@ footer p {
     footer {
         width: 50vw;
         left: 40vw;
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 24px;
     }
 }
 @media screen and (min-width: 1200px) {
