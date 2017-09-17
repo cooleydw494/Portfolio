@@ -1,0 +1,31 @@
+{
+  "name": "cooleydw494.github.io",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cooleydw494/cooleydw494.github.io.git"
+  },
+  "keywords": [
+    "david",
+    "cooley",
+    "portfolio",
+    "web",
+    "developer",
+    "designer"
+  ],
+  "author": "david cooley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cooleydw494/cooleydw494.github.io/issues"
+  },
+  "homepage": "https://github.com/cooleydw494/cooleydw494.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0"
+  }
+}
